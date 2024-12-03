@@ -51,3 +51,14 @@ ananymousFunction();
 
 
 
+//Reason3 :Module Pattern******************************Excellent Pattern TO Remember
+
+const getAllFuncs=(function AllFunctions(count)
+{
+    return {
+        increment:()=>count+1,
+        decrement:()=>count-1
+    }
+})(10)
+console.log(getAllFuncs.increment())
+console.log(getAllFuncs.decrement())
